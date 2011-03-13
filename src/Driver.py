@@ -16,7 +16,6 @@ cp = nltk.RegexpParser(grammar)
 result = cp.parse(treebank.tagged_sents()[test_set[0]])
 print "My parse: \n" + str(result) + "\n"
 print "Actual parse: \n" + str(chunks[test_set[0]])
-
-eval = cp.evaluate(chunks[test_set[0]], grammar)
+print cp.evaluate(chunks)
     
     
